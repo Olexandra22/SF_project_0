@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def random_predict(num: int = 1) -> int:
     '''Игра "компьютер угадает число меньше чем за 20 попыток"'''
     
@@ -22,6 +23,7 @@ def random_predict(num: int = 1) -> int:
             break # конец игры, выход из цикла
         
     return count
+
 
 def score_game(random_predict) -> int:
     """За какое количество попыток в среднем за 1000 подходов угадывает наш алгоритм
@@ -46,5 +48,6 @@ def score_game(random_predict) -> int:
     
     print(f'Ваш алгоритм угадывает число в среднем за: {score} попыток')
 
+    
 score_game(random_predict) 
     
